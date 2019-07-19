@@ -10,9 +10,9 @@ import static com.codeborne.selenide.Condition.visible;
 public class DashboardPage extends BaseTest {
 
     @FindBy(id = "page-container")
-    private SelenideElement pageDashboard;
+    private SelenideElement dashboardPage;
 
-    public SelenideElement getPageDashboard(){
-        return pageDashboard.shouldBe(visible);
+    public SelenideElement getDashboardPage(){
+        return dashboardPage.shouldBe(visible);
     }
 }

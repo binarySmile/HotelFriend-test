@@ -9,7 +9,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 
 
-public class TestPlanets {
+public class PlanetsTest {
 
     private static String base_URL = "https://swapi.co/api/planets/";
     private static String param = "murky";

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.page;
 import static org.testng.Assert.assertTrue;
 
-public class AccountTest extends BaseTest {
+public class AccountLoggingInTests extends BaseTest {
 
     @Test
     public void positiveTest() {
@@ -16,7 +16,7 @@ public class AccountTest extends BaseTest {
         accountPage.inputUserEmail(data.getProperty("email"));
         accountPage.inputPassword(data.getProperty("password"));
         DashboardPage dashboardPage = page(DashboardPage.class);
-        assertTrue(dashboardPage.getPageDashboard().isDisplayed());
+        assertTrue(dashboardPage.getDashboardPage().isDisplayed());
     }
 
     @Test

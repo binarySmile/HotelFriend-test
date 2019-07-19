@@ -3,7 +3,7 @@
 <suite name="uiTest">
     <test name="tests">
         <classes>
-            <class name="com.github.binarySmile.hotelFriend.uiTest.tests.AccountTest"/>
+            <class name="com.github.binarySmile.hotelFriend.uiTest.tests.AccountLoggingInTests"/>
         </classes>
     </test>
 </suite>
