@@ -1,9 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="uiTest">
-    <test name="tests">
+<suite name="Test">
+    <test name="uaTest">
         <classes>
             <class name="com.github.binarySmile.hotelFriend.uiTest.tests.AccountLoggingInTests"/>
+        </classes>
+    </test>
+    <test name="apiTest">
+        <classes>
             <class name="com.github.binarySmile.hotelFriend.apiTest.PlanetsTest"/>
         </classes>
     </test>
