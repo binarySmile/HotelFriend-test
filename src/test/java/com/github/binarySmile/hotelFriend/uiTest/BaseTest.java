@@ -20,7 +20,7 @@ public class BaseTest {
         Configuration.browser = "chrome";
         System.setProperty("webdriver.chrome.driver",
                 "src/test/resources/chromedriver.exe");
-    }
+}
 
     @BeforeTest
     public void initialize() {
@@ -29,7 +29,8 @@ public class BaseTest {
                 + "/src/test/resources/data.properties")) {
             data.load(fileInputStream);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException("Exception during the IO operation: "
+            + e.getLocalizedMessage());
         }
     }
 

@@ -2,7 +2,7 @@ package com.github.binarySmile.hotelFriend.apiTest;
 
 import com.github.binarySmile.hotelFriend.apiTest.pojo.PlanetsResponse;
 import com.github.binarySmile.hotelFriend.apiTest.pojo.SearchResponse;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
